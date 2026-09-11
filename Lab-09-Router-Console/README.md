@@ -14,7 +14,7 @@
 
 ## Objective
 
-The objective of this lab is to connect a PC to a router using a console cable and perform basic router configuration.
+The objective of this lab is to connect a PC to a router using a console connection and perform basic router configuration and security settings.
 
 ---
 
@@ -24,65 +24,81 @@ The objective of this lab is to connect a PC to a router using a console cable a
 
 ---
 
+## Network Topology
+
+The network topology consists of:
+
+- 1 PC
+- 1 Cisco 2811 Router
+- Console Connection
+
+The PC was connected to the router to access and configure the Router Command Line Interface (CLI).
+
+---
+
 ## Tasks Performed
 
-### 1. Console Connection
+### 1. Router Console Connection
 
-A PC was connected to the router using a console cable.
+A PC was connected to the Cisco 2811 Router using a console connection.
 
-The console connection allows direct access to the router configuration.
-
----
-
-### 2. Configure Hostname
-
-The router hostname was configured to identify the device.
+This connection allowed direct access to the router configuration through the CLI.
 
 ---
 
-### 3. Configure Console Password
+### 2. Configure Console Password
 
-A console password was configured to secure access to the router through the console connection.
+A password was configured for console access.
 
----
+The following commands were used:
 
-### 4. Configure Enable Password
+```text
+line console 0
+password anzal1
+login
+3. Configure Enable Password
 
-An enable password was configured to secure privileged EXEC mode on the router.
+An enable password was configured to secure privileged EXEC mode.
 
----
+enable password szabist1
+4. Save Router Configuration
 
-## Basic Configuration
+The router configuration was saved using:
 
-The following basic configurations were performed:
+copy running-config startup-config
 
-- Connected PC to Router using a console cable
-- Configured router hostname
-- Configured console password
-- Configured enable password
-- Tested router access
+The running configuration was successfully saved as the startup configuration.
 
----
+5. Reload Router
 
-## Screenshots
+The reload command was used to restart the router.
 
-Screenshots of the following tasks are available in the Screenshots folder:
+reload
+Screenshots
 
-- PC to Router Console Connection
-- Router CLI Configuration
-- Hostname Configuration
-- Console Password Configuration
-- Enable Password Configuration
+The Screenshots folder contains:
 
----
+1. PC to Router Console Connection
 
-## Learning Outcomes
+This screenshot shows the network topology with a PC connected to a Cisco 2811 Router.
+
+2. Router Configuration and Passwords
+
+This screenshot shows:
+
+Console password configuration
+Console login configuration
+Enable password configuration
+Saving the router configuration
+Router reload command
+Learning Outcomes
 
 After completing this lab, I learned how to:
 
-- Connect a PC to a router using a console cable.
-- Access router configuration using the console.
-- Configure a router hostname.
-- Configure a console password.
-- Configure an enable password.
-- Understand basic router security.
+Connect a PC to a router using a console connection.
+Access the Router CLI.
+Configure a console password.
+Configure an enable password.
+Save the running configuration.
+Reload a router.
+Perform basic router security configuration.
