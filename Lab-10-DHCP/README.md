@@ -48,7 +48,7 @@ The router was used to configure DHCP pools and automatically assign IP addresse
 
 The DHCP pool for the BSAI-4A network was configured with the following network address and default gateway:
 
-```text
+
 ip dhcp pool BSAI-4A
 network 192.168.10.0 255.255.255.0
 default-router 192.168.10.1
